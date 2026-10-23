@@ -11,6 +11,27 @@ PEAK_MULTIPLIERS = {
 
 # Study area for the prototype: keep SMALL so the graph builds/caches in minutes.
 STUDY_AREA_NAME = "Bengaluru, Karnataka, India"
-STUDY_AREA_BBOX = None  # (north, south, east, west) to restrict to a few wards
+# (north, south, east, west). ~4.4 km x 7 km of central Bengaluru (MG Road, Shivajinagar, Ulsoor,
+# Richmond Town, Shanthinagar, Vasanth Nagar...): roughly 6-8 wards. Hospitals + fire stations inside.
+# Set to None to fall back to STUDY_AREA_NAME (whole city; slow, do it later).
+STUDY_AREA_BBOX = (12.990, 12.950, 77.640, 77.575)
+
+# ASSUMED free-flow speeds (km/h) used when OSM has no maxspeed tag (most Bengaluru roads).
+FREEFLOW_SPEEDS_KMH = {
+    "motorway": 60, "trunk": 50, "primary": 40, "secondary": 35, "tertiary": 30,
+    "unclassified": 25, "residential": 25, "living_street": 15, "service": 15,
+}
+FREEFLOW_FALLBACK_KMH = 25
 
 GRAPH_CACHE = "data/processed/bengaluru.graphml"
+
+
+# ---- P1: assets, zones, caches -------------------------------------------------------------
+# ASSUMED crews per base. Real vehicle counts are not public; label as assumption in UI/deck.
+CREWS_DEFAULT = {"ambulance": 2, "fire": 2}
+
+FIRE_CSV = "data/fire_stations.csv"             # hand-checked stations (id,name,lat,lon[,crews]); wins over OSM
+ASSETS_CACHE = "data/processed/assets.json"     # committed to git (small) so teammates run offline
+ZONES_CACHE = "data/processed/zones.json"
+WARDS_FILE = "data/raw/wards.geojson"           # optional ward polygons; if absent -> grid cells
+GRID_CELL_M = 1000                              # grid-cell fallback size
