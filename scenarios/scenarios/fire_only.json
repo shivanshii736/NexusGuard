@@ -1,0 +1,9 @@
+{
+  "name": "Peak-hour fire (no flood)",
+  "description": "Single fire during a normal peak; shows the shared engine works without the flood module.",
+  "duration_min": 40,
+  "events": [
+    {"t_min": 5,  "label": "Market fire starts", "hazard": {"type": "fire", "node": 24, "severity": 2}},
+    {"t_min": 20, "label": "Fire escalates", "hazard": {"type": "fire", "node": 24, "severity": 3}}
+  ]
+}

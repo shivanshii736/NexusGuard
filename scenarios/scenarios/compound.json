@@ -1,0 +1,11 @@
+{
+  "name": "Compound event: monsoon + fire + collapse",
+  "description": "The deck's compound-event test: flood closures, a building collapse and a fire compete for the same crews.",
+  "duration_min": 90,
+  "events": [
+    {"t_min": 0,  "label": "Heavy rain begins", "end_min": 20, "hazard": {"type": "flood", "rainfall_mm_hr": 45, "duration_h": 2}},
+    {"t_min": 20, "label": "Rain intensifies; basin underpass floods", "hazard": {"type": "flood", "rainfall_mm_hr": 55, "duration_h": 2}},
+    {"t_min": 40, "label": "Building collapse, north-east", "hazard": {"type": "generic", "kind": "building_collapse", "node": 12, "severity": 3}},
+    {"t_min": 55, "label": "Warehouse fire near the basin", "hazard": {"type": "fire", "node": 31, "severity": 3}}
+  ]
+}
