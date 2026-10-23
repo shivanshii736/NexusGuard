@@ -1,4 +1,4 @@
-# NexusGuard: one engine, multiple hazards
+# RapidReach: one engine, multiple hazards
 
 Emergency-response accessibility for Bengaluru. Flood and fire plug-ins turn hazard events into road closures,
 slowdowns and incidents; one shared engine computes ward-level response coverage (ambulance / fire / rescue),
@@ -18,11 +18,11 @@ streamlit run app.py
 ## Layout and owners
 | Path | Owner | What |
 |---|---|---|
-| `nexusguard/types.py` | ALL | shared contract; change only by agreement |
-| `nexusguard/network/`, `data/` | P1 | OSM graph, peak multipliers, assets, wards, planning-mode baseline |
-| `nexusguard/engine/` | P2 | ETAs, coverage, crew dispatch (contention), pre-positioning, alerts |
-| `nexusguard/hazards/`, `scenarios/` | P3 | flood, fire, generic incidents, Oct 2024 / May 2025 replays |
-| `nexusguard/ui/`, `app.py` | P3 | Streamlit + Folium |
+| `rapidreach/types.py` | ALL | shared contract; change only by agreement |
+| `rapidreach/network/`, `data/` | P1 | OSM graph, peak multipliers, assets, wards, planning-mode baseline |
+| `rapidreach/engine/` | P2 | ETAs, coverage, crew dispatch (contention), pre-positioning, alerts |
+| `rapidreach/hazards/`, `scenarios/` | P3 | flood, fire, generic incidents, Oct 2024 / May 2025 replays |
+| `rapidreach/ui/`, `app.py` | P3 | Streamlit + Folium |
 | `tests/toy_graph.py` | ALL | synthetic 7x7 city: develop against this first |
 
 ## Git rules
