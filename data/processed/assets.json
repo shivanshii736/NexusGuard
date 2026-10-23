@@ -1,49 +1,9 @@
 [
  {
-  "id": "osm-663604723",
-  "kind": "ambulance",
-  "node": 2228165701,
-  "name": "Government Primary Health Centre",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1005544881",
-  "kind": "ambulance",
-  "node": 4294902740,
-  "name": "Mallya Audikesh Diagnostics Center",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1006462338",
-  "kind": "ambulance",
-  "node": 14177258752,
-  "name": "Mallige Medical Centre",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1454651986",
-  "kind": "ambulance",
-  "node": 263155261,
-  "name": "Narayana Netralaya",
-  "crews": 2,
-  "is_proxy": true
- },
- {
   "id": "osm-3370028968",
   "kind": "ambulance",
   "node": 1404460902,
   "name": "Motherhood Hospital(Unit Of Rhea Healthcare Pvt Ltd)",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-3370244392",
-  "kind": "ambulance",
-  "node": 736207446,
-  "name": "Respiratory and womens health clinic.",
   "crews": 2,
   "is_proxy": true
  },
@@ -64,22 +24,6 @@
   "is_proxy": true
  },
  {
-  "id": "osm-3400223541",
-  "kind": "ambulance",
-  "node": 287793735,
-  "name": "Dr. Rajkumar Blood Bank",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-3556103531",
-  "kind": "ambulance",
-  "node": 736207379,
-  "name": "ALDOS Medical Service Pvt LTD",
-  "crews": 2,
-  "is_proxy": true
- },
- {
   "id": "osm-3773028057",
   "kind": "ambulance",
   "node": 1859880677,
@@ -88,34 +32,10 @@
   "is_proxy": true
  },
  {
-  "id": "osm-3922280181",
-  "kind": "ambulance",
-  "node": 10060517219,
-  "name": "Health Care Global",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4286285517",
-  "kind": "ambulance",
-  "node": 736207481,
-  "name": "Ameena Medical centre",
-  "crews": 2,
-  "is_proxy": true
- },
- {
   "id": "osm-4322812542",
   "kind": "ambulance",
   "node": 6485085861,
   "name": "Dr.Agarwal Eye & Dental Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4445139977",
-  "kind": "ambulance",
-  "node": 631853251,
-  "name": "Indianova Healthcare Pvt Ltd",
   "crews": 2,
   "is_proxy": true
  },
@@ -144,42 +64,10 @@
   "is_proxy": true
  },
  {
-  "id": "osm-4446346449",
-  "kind": "ambulance",
-  "node": 429230967,
-  "name": "St. Martha's Heart Centre",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4446518811",
-  "kind": "ambulance",
-  "node": 10279595643,
-  "name": "Desai Nursing Home",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4446857201",
-  "kind": "ambulance",
-  "node": 736207386,
-  "name": "Ayur jagruti",
-  "crews": 2,
-  "is_proxy": true
- },
- {
   "id": "osm-4840185928",
   "kind": "ambulance",
   "node": 616795968,
   "name": "Cambridge Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4843104321",
-  "kind": "ambulance",
-  "node": 10289145755,
-  "name": "Respigen healthcare",
   "crews": 2,
   "is_proxy": true
  },
@@ -232,10 +120,10 @@
   "is_proxy": true
  },
  {
-  "id": "osm-6944418996",
+  "id": "osm-6944364980",
   "kind": "ambulance",
-  "node": 3709730356,
-  "name": "Nikad Ortho Centre",
+  "node": 631853232,
+  "name": "Sadhana Eye Hospital, Bengaluru Urban",
   "crews": 2,
   "is_proxy": true
  },
@@ -304,26 +192,10 @@
   "is_proxy": true
  },
  {
-  "id": "osm-7572526767",
-  "kind": "ambulance",
-  "node": 7475957594,
-  "name": "ESIC Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
   "id": "osm-7576958028",
   "kind": "ambulance",
   "node": 429001182,
   "name": "Unani Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958032",
-  "kind": "ambulance",
-  "node": 459793789,
-  "name": "Rahul Maternity & Child Health Centre",
   "crews": 2,
   "is_proxy": true
  },
@@ -368,10 +240,10 @@
   "is_proxy": false
  },
  {
-  "id": "osm-11684501144",
+  "id": "osm-11710491602",
   "kind": "ambulance",
-  "node": 251142775,
-  "name": "Span Health Center",
+  "node": 3428358309,
+  "name": "Uvin Care Hospital",
   "crews": 2,
   "is_proxy": true
  },
@@ -484,6 +356,14 @@
   "kind": "ambulance",
   "node": 459554688,
   "name": "HCG Cancer Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-997923996",
+  "kind": "ambulance",
+  "node": 10279595643,
+  "name": "Dr. P.R. Desai Hospital Pvt Ltd",
   "crews": 2,
   "is_proxy": true
  },

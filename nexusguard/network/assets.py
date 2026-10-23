@@ -13,18 +13,37 @@ MAX_SNAP_M = 300     # drop points that are further than this from any graph nod
 DEDUPE_M = 150       # same-kind points closer than this are one facility (OSM often has node + polygon)
 
 
-def _fetch_osm(bbox) -> list[dict]:
+def _is_real_hospital(name, emergency) -> bool:
+    """HEURISTIC: OSM tags many small clinics as amenity=hospital. Keep only emergency=yes or a name
+    containing 'hospital'. Tune here if the count looks off."""
+    return emergency == "yes" or (isinstance(name, str) and "hospital" in name.lower())
+
+
+def _fetch_osm(bbox, attempts: int = 3) -> list[dict]:
+    import time
     import osmnx as ox
+    ox.settings.use_cache = True
+    ox.settings.cache_folder = "data/raw/osm_cache"
     n, s, e, w = bbox
     tags = {"amenity": ["hospital", "fire_station"]}
-    if int(ox.__version__.split(".")[0]) >= 2:
-        gdf = ox.features_from_bbox((w, s, e, n), tags)
-    else:
-        gdf = ox.features_from_bbox(n, s, e, w, tags)
+    for i in range(attempts):                    # public Overpass is often busy (502): back off and retry
+        try:
+            if int(ox.__version__.split(".")[0]) >= 2:
+                gdf = ox.features_from_bbox((w, s, e, n), tags)
+            else:
+                gdf = ox.features_from_bbox(n, s, e, w, tags)
+            break
+        except Exception as ex:
+            if i == attempts - 1:
+                raise
+            print(f"Overpass failed ({str(ex)[:60]}...); retrying in {30 * (i + 1)} s")
+            time.sleep(30 * (i + 1))
     rows = []
     for idx, r in gdf.iterrows():
         kind = {"hospital": "ambulance", "fire_station": "fire"}.get(r.get("amenity"))
         if kind is None or r.geometry is None:
+            continue
+        if kind == "ambulance" and not _is_real_hospital(r.get("name"), r.get("emergency")):
             continue
         p = r.geometry.representative_point()
         name = r.get("name")
@@ -60,11 +79,7 @@ def _dedupe(rows: list[dict]) -> list[dict]:
 
 
 def build_assets(G, bbox=config.STUDY_AREA_BBOX, fire_csv=config.FIRE_CSV) -> list[Asset]:
-    try:
-        osm = _fetch_osm(bbox)
-    except Exception as ex:                      # offline / Overpass down: CSV-only still works
-        print(f"WARNING: OSM asset fetch failed ({ex}); using CSV only")
-        osm = []
+    osm = _fetch_osm(bbox)                       # raises if Overpass keeps failing: never cache a half-empty result
     rows = _dedupe(_read_fire_csv(fire_csv) + osm)
     nodes, dists = nearest_nodes(G, [r["lon"] for r in rows], [r["lat"] for r in rows])
     assets, dropped = [], 0
