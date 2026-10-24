@@ -6,9 +6,9 @@ travel costs (and optional time-of-day multipliers). The base graph is never mut
 from __future__ import annotations
 import networkx as nx
 
-from .hazards import HazardEffect
-from .toy_graph import edge_key
-from .traffic import DEFAULT_PEAK_HOUR, time_multiplier
+from nexusguard.hazards import HazardEffect
+from nexusguard.toy_graph import edge_key
+from nexusguard.traffic import DEFAULT_PEAK_HOUR, time_multiplier
 
 
 def road_state(G: nx.Graph, effect: HazardEffect | None = None, peak: bool = False,

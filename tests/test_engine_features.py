@@ -1,14 +1,14 @@
 import pytest
 
-from rapidreach.alerts import AlertRules, compute_alerts, new_alerts, persistent_gaps
-from rapidreach.hazards import FireHazard, FloodHazard, GenericIncident, merge_effects
-from rapidreach.pipeline import evaluate
-from rapidreach.preposition import apply_moves, rank_staging_sites, recommend_moves
-from rapidreach.response_stub import StubResponseEngine
-from rapidreach.roadstate import road_state
-from rapidreach.scenario import ScenarioPlayer, load_scenarios
-from rapidreach.toy_graph import Asset, TARGETS_S, build_toy_graph, default_assets, node_id
-from rapidreach.traffic import congestion_factor, time_multiplier
+from nexusguard.live.alerts import AlertRules, compute_alerts, new_alerts, persistent_gaps
+from nexusguard.hazards import FireHazard, FloodHazard, GenericIncident, merge_effects
+from nexusguard.live.pipeline import evaluate
+from nexusguard.live.preposition import apply_moves, rank_staging_sites, recommend_moves
+from nexusguard.live.response_stub import StubResponseEngine
+from nexusguard.live.roadstate import road_state
+from nexusguard.scenario import ScenarioPlayer, load_scenarios
+from nexusguard.toy_graph import Asset, TARGETS_S, build_toy_graph, default_assets, node_id
+from nexusguard.traffic import congestion_factor, time_multiplier
 
 G, ENG, A = build_toy_graph(), StubResponseEngine(), default_assets()
 SC = load_scenarios("scenarios")["Compound event: monsoon + fire + collapse"]

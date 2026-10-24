@@ -1,9 +1,9 @@
+# Core: engine + live-mode app + tests. Everything here works offline on the toy graph.
 networkx>=3.2
+numpy>=1.26
 pandas>=2.1
-osmnx>=1.9
-geopandas>=0.14
-shapely>=2.0
-streamlit>=1.36
+scipy>=1.11
+streamlit>=1.50
 folium>=0.17
 streamlit-folium>=0.22
 pytest>=8.0

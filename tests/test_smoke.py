@@ -1,13 +1,15 @@
+from nexusguard.engine.coverage import compute_coverage, providers_from_stations
+from nexusguard.engine.models import RoadState
+from nexusguard.network.adapters import to_stations, to_wards
 from tests.toy_graph import make_toy
-from nexusguard.types import RoadState
-from nexusguard.engine.coverage import coverage
 
 
 def test_cutting_off_a_station_degrades_coverage():
     G, assets, zones = make_toy()
-    base = coverage(G, assets, zones, RoadState(), "fire")
+    wards, providers = to_wards(zones), providers_from_stations(to_stations(assets))
+    base = compute_coverage(G, wards, providers, services=("fire",))
     # cut off fire station A (node 8) by closing every road touching it
-    closed = {(u, v, k) for u, v, k in G.edges(keys=True) if 8 in (u, v)}
-    hit = coverage(G, assets, zones, RoadState(closed_edges=closed), "fire")
-    assert hit.pct_zones < base.pct_zones
-    print(f"fire coverage {base.pct_zones:.0%} -> {hit.pct_zones:.0%}")
+    closed = frozenset((u, v) for u, v in G.edges() if 8 in (u, v))
+    hit = compute_coverage(G, wards, providers, state=RoadState(closed=closed), services=("fire",))
+    assert hit["covered"].mean() < base["covered"].mean()
+    print(f"fire coverage {base['covered'].mean():.0%} -> {hit['covered'].mean():.0%}")

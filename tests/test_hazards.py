@@ -1,11 +1,11 @@
 import networkx as nx
 import pytest
 
-from rapidreach.hazards import FireHazard, FloodHazard, GenericIncident, hazard_from_dict, merge_effects
-from rapidreach.roadstate import road_state
-from rapidreach.response_stub import StubResponseEngine
-from rapidreach.scenario import Scenario, ScenarioPlayer, load_scenarios
-from rapidreach.toy_graph import build_toy_graph, default_assets, edge_key, node_id
+from nexusguard.hazards import FireHazard, FloodHazard, GenericIncident, hazard_from_dict, merge_effects
+from nexusguard.live.roadstate import road_state
+from nexusguard.live.response_stub import StubResponseEngine
+from nexusguard.scenario import Scenario, ScenarioPlayer, load_scenarios
+from nexusguard.toy_graph import build_toy_graph, default_assets, edge_key, node_id
 
 G = build_toy_graph()
 

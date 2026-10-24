@@ -4,9 +4,9 @@ from __future__ import annotations
 from dataclasses import dataclass
 import networkx as nx
 
-from .hazards import HazardEffect
+from nexusguard.hazards import HazardEffect
 from .roadstate import road_state
-from .toy_graph import Asset, TARGETS_S
+from nexusguard.toy_graph import Asset, TARGETS_S
 
 
 @dataclass

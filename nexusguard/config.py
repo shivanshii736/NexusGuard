@@ -11,8 +11,6 @@ PEAK_MULTIPLIERS = {
 
 # Study area for the prototype: keep SMALL so the graph builds/caches in minutes.
 STUDY_AREA_NAME = "Bengaluru, Karnataka, India"
-# (north, south, east, west). ~4.4 km x 7 km of central Bengaluru (MG Road, Shivajinagar, Ulsoor,
-# Richmond Town, Shanthinagar, Vasanth Nagar...): roughly 6-8 wards. Hospitals + fire stations inside.
 # (north, south, east, west). ~5 km x 6 km of north-east Bengaluru around Hebbal.
 STUDY_AREA_BBOX = (13.060, 13.015, 77.625, 77.570)
 

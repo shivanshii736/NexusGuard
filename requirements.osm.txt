@@ -1,0 +1,5 @@
+# Only needed to (re)build the real Bengaluru graph / assets / ward polygons from OpenStreetMap.
+# Install with:  pip install -r requirements.txt -r requirements.osm.txt
+osmnx>=1.9
+geopandas>=0.14
+shapely>=2.0

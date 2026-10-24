@@ -14,7 +14,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import networkx as nx
 
-from .toy_graph import Asset, TARGETS_S
+from nexusguard.toy_graph import Asset, TARGETS_S
 
 STAGING_PENALTY_S = 90   # ASSUMPTION: extra time to reach a cordoned incident from the cordon edge
 

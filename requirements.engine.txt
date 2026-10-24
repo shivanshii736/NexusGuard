@@ -1,4 +1,0 @@
-networkx>=3.2
-numpy
-pandas
-scipy
