@@ -1,0 +1,194 @@
+[
+ {
+  "id": "osm-928264962",
+  "kind": "fire",
+  "node": 9192046008,
+  "name": "Hebbal Fire Station",
+  "crews": 2,
+  "is_proxy": false
+ },
+ {
+  "id": "osm-966863252",
+  "kind": "ambulance",
+  "node": 529291227,
+  "name": "RMV Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-1474875685",
+  "kind": "ambulance",
+  "node": 10029317880,
+  "name": "Dr. Ambedkar Medical College Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6937890455",
+  "kind": "ambulance",
+  "node": 9189021155,
+  "name": "Chaitanya Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6938005237",
+  "kind": "ambulance",
+  "node": 6536781497,
+  "name": "Sri Sai Hospital, Bengaluru Urban",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6938547661",
+  "kind": "ambulance",
+  "node": 5318359652,
+  "name": "Ashirwad Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6938695174",
+  "kind": "ambulance",
+  "node": 9192046001,
+  "name": "J M J Hospital, Bengaluru Urban",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6938948962",
+  "kind": "ambulance",
+  "node": 430043771,
+  "name": "Lakshmi Hospital, Ganganagar",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6939074293",
+  "kind": "ambulance",
+  "node": 9192019759,
+  "name": "Dr Ambedkar Medical College Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6939076687",
+  "kind": "ambulance",
+  "node": 9188744830,
+  "name": "Manju Sree Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6945075435",
+  "kind": "ambulance",
+  "node": 5318371853,
+  "name": "V Care Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6947430278",
+  "kind": "ambulance",
+  "node": 582589494,
+  "name": "Poornima Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6947504016",
+  "kind": "ambulance",
+  "node": 529359240,
+  "name": "Mamta Hospital, Bengaluru Rural",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6947504017",
+  "kind": "ambulance",
+  "node": 529277396,
+  "name": "S. J. Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6948590938",
+  "kind": "ambulance",
+  "node": 9189021135,
+  "name": "Premier Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6950412307",
+  "kind": "ambulance",
+  "node": 5283345800,
+  "name": "Al- Habeeb Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7213565705",
+  "kind": "ambulance",
+  "node": 582576084,
+  "name": "Cure Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7577248218",
+  "kind": "ambulance",
+  "node": 10168173210,
+  "name": "Navya Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7577248224",
+  "kind": "ambulance",
+  "node": 2460400129,
+  "name": "Icon Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-11407254183",
+  "kind": "ambulance",
+  "node": 5420463137,
+  "name": "MEDSTAR Speciality Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-54963084",
+  "kind": "ambulance",
+  "node": 13287659458,
+  "name": "Baptist Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-148032600",
+  "kind": "ambulance",
+  "node": 14008167293,
+  "name": "Ramaiah Memorial Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-160906231",
+  "kind": "ambulance",
+  "node": 1596104441,
+  "name": "Manipal Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-1040899005",
+  "kind": "ambulance",
+  "node": 4952686991,
+  "name": "Aster CMI Hospital",
+  "crews": 2,
+  "is_proxy": true
+ }
+]
