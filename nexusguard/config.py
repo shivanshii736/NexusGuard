@@ -13,8 +13,8 @@ PEAK_MULTIPLIERS = {
 STUDY_AREA_NAME = "Bengaluru, Karnataka, India"
 # (north, south, east, west). ~4.4 km x 7 km of central Bengaluru (MG Road, Shivajinagar, Ulsoor,
 # Richmond Town, Shanthinagar, Vasanth Nagar...): roughly 6-8 wards. Hospitals + fire stations inside.
-# Set to None to fall back to STUDY_AREA_NAME (whole city; slow, do it later).
-STUDY_AREA_BBOX = (12.990, 12.950, 77.640, 77.575)
+# (north, south, east, west). ~5 km x 6 km of north-east Bengaluru around Hebbal.
+STUDY_AREA_BBOX = (13.060, 13.015, 77.625, 77.570)
 
 # ASSUMED free-flow speeds (km/h) used when OSM has no maxspeed tag (most Bengaluru roads).
 FREEFLOW_SPEEDS_KMH = {
@@ -35,3 +35,6 @@ ASSETS_CACHE = "data/processed/assets.json"     # committed to git (small) so te
 ZONES_CACHE = "data/processed/zones.json"
 WARDS_FILE = "data/raw/wards.geojson"           # optional ward polygons; if absent -> grid cells
 GRID_CELL_M = 1000                              # grid-cell fallback size
+
+# Response-time targets in MINUTES; read by engine/settings.py (otherwise it defaults to 8/8/15).
+RESPONSE_TARGETS_MIN = {"ambulance": 10, "fire": 5, "rescue": 15}

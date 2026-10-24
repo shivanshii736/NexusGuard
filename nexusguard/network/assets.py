@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
 
 from nexusguard import config
@@ -13,10 +14,19 @@ MAX_SNAP_M = 300     # drop points that are further than this from any graph nod
 DEDUPE_M = 150       # same-kind points closer than this are one facility (OSM often has node + polygon)
 
 
+_SPECIALTY = re.compile(r"\b(dental|eye|piles|skin|ent|ayurved\w*|homeo\w*|homoeo\w*|veterinary|physio\w*|"
+                        r"dermat\w*|fertility|ivf|cosmetic|hair|psychiatr\w*|rehab\w*)\b")
+
+
 def _is_real_hospital(name, emergency) -> bool:
-    """HEURISTIC: OSM tags many small clinics as amenity=hospital. Keep only emergency=yes or a name
-    containing 'hospital'. Tune here if the count looks off."""
-    return emergency == "yes" or (isinstance(name, str) and "hospital" in name.lower())
+    """HEURISTIC: OSM tags many small/specialty places as amenity=hospital. Keep emergency=yes, or a name
+    containing 'hospital' that is not an obvious specialty clinic (dental, eye, piles...). Tune here."""
+    if emergency == "yes":
+        return True
+    if not isinstance(name, str):
+        return False
+    low = name.lower()
+    return "hospital" in low and not _SPECIALTY.search(low)
 
 
 def _fetch_osm(bbox, attempts: int = 3) -> list[dict]:

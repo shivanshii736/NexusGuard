@@ -1,409 +1,193 @@
 [
  {
-  "id": "osm-3370028968",
-  "kind": "ambulance",
-  "node": 1404460902,
-  "name": "Motherhood Hospital(Unit Of Rhea Healthcare Pvt Ltd)",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-3370279044",
-  "kind": "ambulance",
-  "node": 1404460887,
-  "name": "Rashmi Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-3370453173",
-  "kind": "ambulance",
-  "node": 1232740585,
-  "name": "Netradama Eye Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-3773028057",
-  "kind": "ambulance",
-  "node": 1859880677,
-  "name": "HCG Cancer Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4322812542",
-  "kind": "ambulance",
-  "node": 6485085861,
-  "name": "Dr.Agarwal Eye & Dental Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4446285519",
-  "kind": "ambulance",
-  "node": 429415632,
-  "name": "Medic Star Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4446289881",
-  "kind": "ambulance",
-  "node": 294079863,
-  "name": "Hsis Gosha Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4446341278",
-  "kind": "ambulance",
-  "node": 3226610441,
-  "name": "H B S Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-4840185928",
-  "kind": "ambulance",
-  "node": 616795968,
-  "name": "Cambridge Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-5862574185",
-  "kind": "ambulance",
-  "node": 1516426377,
-  "name": "Lakeside Medical Centre and Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6938690598",
-  "kind": "ambulance",
-  "node": 461755360,
-  "name": "Hitech Kidney Stone Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6938775840",
-  "kind": "ambulance",
-  "node": 10028708376,
-  "name": "Amar Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6939719899",
-  "kind": "ambulance",
-  "node": 1859880693,
-  "name": "Phoenix Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6944138105",
-  "kind": "ambulance",
-  "node": 459554660,
-  "name": "Bangalore Kidney Stones Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6944239588",
-  "kind": "ambulance",
-  "node": 429415712,
-  "name": "Manjushree Speciality Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6944364980",
-  "kind": "ambulance",
-  "node": 631853232,
-  "name": "Sadhana Eye Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6944925493",
-  "kind": "ambulance",
-  "node": 2227865255,
-  "name": "Bengaluru West Lions Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6945020140",
-  "kind": "ambulance",
-  "node": 13238812045,
-  "name": "Punarjyoti Eye Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6947371813",
-  "kind": "ambulance",
-  "node": 736207247,
-  "name": "Health Cottage Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6947504038",
-  "kind": "ambulance",
-  "node": 10060658492,
-  "name": "Republic Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6947674447",
-  "kind": "ambulance",
-  "node": 2228279508,
-  "name": "Sri Ram Speciality Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6947915400",
-  "kind": "ambulance",
-  "node": 459554605,
-  "name": "Pd Hinduja Sindhi Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6948552667",
-  "kind": "ambulance",
-  "node": 10053692260,
-  "name": "Get Well Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-6950124308",
-  "kind": "ambulance",
-  "node": 10074904381,
-  "name": "Venkateswara Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958028",
-  "kind": "ambulance",
-  "node": 429001182,
-  "name": "Unani Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958064",
-  "kind": "ambulance",
-  "node": 10020558306,
-  "name": "Alisa Eye Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958084",
-  "kind": "ambulance",
-  "node": 10060571717,
-  "name": "Furtde Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958106",
-  "kind": "ambulance",
-  "node": 14279234203,
-  "name": "Gleneagles Global Hospitals",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-7576958120",
-  "kind": "ambulance",
-  "node": 12111889674,
-  "name": "Dr. Rudrappa's Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-10579312537",
+  "id": "osm-928264962",
   "kind": "fire",
-  "node": 10038561218,
-  "name": "Bengaluru Secretariat Fire Station",
+  "node": 9192046008,
+  "name": "Hebbal Fire Station",
   "crews": 2,
   "is_proxy": false
  },
  {
-  "id": "osm-11710491602",
+  "id": "osm-966863252",
   "kind": "ambulance",
-  "node": 3428358309,
-  "name": "Uvin Care Hospital",
+  "node": 529291227,
+  "name": "RMV Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-12737013801",
+  "id": "osm-1474875685",
   "kind": "ambulance",
-  "node": 308924720,
-  "name": "Hosmat Hospitals",
+  "node": 10029317880,
+  "name": "Dr. Ambedkar Medical College Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-38542913",
+  "id": "osm-6937890455",
   "kind": "ambulance",
-  "node": 9784343331,
-  "name": "St Marthas Hospital",
+  "node": 9189021155,
+  "name": "Chaitanya Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-38750705",
+  "id": "osm-6938005237",
   "kind": "ambulance",
-  "node": 12118752264,
-  "name": "Vydehi Superspeciality Hospital",
+  "node": 6536781497,
+  "name": "Sri Sai Hospital, Bengaluru Urban",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-45444044",
+  "id": "osm-6938547661",
   "kind": "ambulance",
-  "node": 287905344,
-  "name": "Bowring and Lady Curzon Hospitals",
+  "node": 5318359652,
+  "name": "Ashirwad Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-52063534",
+  "id": "osm-6938695174",
   "kind": "ambulance",
-  "node": 429303181,
-  "name": "Sir Haji Ismail Gosha Sait Hospital",
+  "node": 9192046001,
+  "name": "J M J Hospital, Bengaluru Urban",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-124760551",
+  "id": "osm-6938948962",
   "kind": "ambulance",
-  "node": 10121050217,
-  "name": "Sparsh Hospital For Advanced Surgeries, Bengaluru Urban",
+  "node": 430043771,
+  "name": "Lakshmi Hospital, Ganganagar",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-148065730",
+  "id": "osm-6939074293",
   "kind": "ambulance",
-  "node": 9870882717,
-  "name": "Hosmat Hospital",
+  "node": 9192019759,
+  "name": "Dr Ambedkar Medical College Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-161984945",
+  "id": "osm-6939076687",
   "kind": "ambulance",
-  "node": 429230952,
-  "name": "Dasappa Maternity Hospital",
+  "node": 9188744830,
+  "name": "Manju Sree Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-325436710",
+  "id": "osm-6945075435",
   "kind": "ambulance",
-  "node": 461789833,
-  "name": "Fortis Hospitals Limited, Bengaluru Urban",
+  "node": 5318371853,
+  "name": "V Care Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-325781833",
-  "kind": "fire",
-  "node": 1274338608,
-  "name": "Office of the Chief Fire Officer",
-  "crews": 2,
-  "is_proxy": false
- },
- {
-  "id": "osm-369295552",
+  "id": "osm-6947430278",
   "kind": "ambulance",
-  "node": 10094463236,
-  "name": "Halasuru Referal Hospital",
+  "node": 582589494,
+  "name": "Poornima Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-371602983",
+  "id": "osm-6947504016",
   "kind": "ambulance",
-  "node": 9996923761,
+  "node": 529359240,
+  "name": "Mamta Hospital, Bengaluru Rural",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6947504017",
+  "kind": "ambulance",
+  "node": 529277396,
+  "name": "S. J. Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6948590938",
+  "kind": "ambulance",
+  "node": 9189021135,
+  "name": "Premier Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-6950412307",
+  "kind": "ambulance",
+  "node": 5283345800,
+  "name": "Al- Habeeb Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7213565705",
+  "kind": "ambulance",
+  "node": 582576084,
+  "name": "Cure Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7577248218",
+  "kind": "ambulance",
+  "node": 10168173210,
+  "name": "Navya Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-7577248224",
+  "kind": "ambulance",
+  "node": 2460400129,
+  "name": "Icon Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-11407254183",
+  "kind": "ambulance",
+  "node": 5420463137,
+  "name": "MEDSTAR Speciality Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-54963084",
+  "kind": "ambulance",
+  "node": 13287659458,
+  "name": "Baptist Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-148032600",
+  "kind": "ambulance",
+  "node": 14008167293,
+  "name": "Ramaiah Memorial Hospital",
+  "crews": 2,
+  "is_proxy": true
+ },
+ {
+  "id": "osm-160906231",
+  "kind": "ambulance",
+  "node": 1596104441,
   "name": "Manipal Hospital",
   "crews": 2,
   "is_proxy": true
  },
  {
-  "id": "osm-478206073",
+  "id": "osm-1040899005",
   "kind": "ambulance",
-  "node": 4714520787,
-  "name": "Command Hospital (Air Force)",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-509638758",
-  "kind": "ambulance",
-  "node": 459554688,
-  "name": "HCG Cancer Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-997923996",
-  "kind": "ambulance",
-  "node": 10279595643,
-  "name": "Dr. P.R. Desai Hospital Pvt Ltd",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1039668732",
-  "kind": "ambulance",
-  "node": 1469249264,
-  "name": "Shifa Hospital, Bengaluru Urban",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1076398554",
-  "kind": "fire",
-  "node": 2190851942,
-  "name": "High Grounds Fire Station",
-  "crews": 2,
-  "is_proxy": false
- },
- {
-  "id": "osm-1083566607",
-  "kind": "ambulance",
-  "node": 7250922701,
-  "name": "Charaka Super Speciality Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1149213001",
-  "kind": "ambulance",
-  "node": 248003860,
-  "name": "Dr Agarwal's Eye Hospital",
-  "crews": 2,
-  "is_proxy": true
- },
- {
-  "id": "osm-1311064558",
-  "kind": "ambulance",
-  "node": 1276378426,
-  "name": "Trustwell Hospitals",
+  "node": 4952686991,
+  "name": "Aster CMI Hospital",
   "crews": 2,
   "is_proxy": true
  }

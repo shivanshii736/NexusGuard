@@ -18,3 +18,14 @@ def to_wards(zones, members: dict | None = None) -> list:
     members = members or {}
     return [Ward(id=z.id, name=z.name, centroid=z.node, nodes=tuple(members.get(z.id, ())),
                  population=z.population if z.population is not None else 1.0) for z in zones]
+
+
+def peak_view(G):
+    """Copy of G whose `travel_time` is the peak-hour time (= peak_time).
+
+    P2's engine routes on `travel_time` by default, so passing peak_view(G) to compute_coverage /
+    dispatch makes it work on peak-hour times without changing engine code. G itself is untouched."""
+    H = G.copy()
+    for _, _, d in H.edges(data=True):
+        d["travel_time"] = d["peak_time"]
+    return H

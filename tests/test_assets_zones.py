@@ -66,12 +66,22 @@ def test_adapters_map_to_engine_models():
     assert wards[1].nodes == () and wards[1].population == 1.0
 
 
-def test_baseline_report_shape():
+def test_baseline_report_shape_and_peak_not_better():
     G, assets, zones = make_toy()
     rep = baseline_report(G, assets, zones)
     for svc in ("fire", "ambulance"):
-        r = rep[svc]
-        assert r["covered"] + r["missed"] == r["zones"] == len(zones)
+        f, p = rep[svc]["free_flow"], rep[svc]["peak"]
+        assert p["covered"] + p["missed"] == p["zones"] == len(zones)
+        assert p["covered"] <= f["covered"]
+
+
+def test_peak_view_swaps_times_without_touching_original():
+    from nexusguard.network.adapters import peak_view
+    G, _, _ = make_toy()
+    H = peak_view(G)
+    u, v, k = next(iter(G.edges(keys=True)))
+    assert H[u][v][k]["travel_time"] == G[u][v][k]["peak_time"]
+    assert G[u][v][k]["travel_time"] == make_toy()[0][u][v][k]["travel_time"]
 
 
 def test_hospital_filter_drops_clinics():
@@ -79,3 +89,10 @@ def test_hospital_filter_drops_clinics():
     assert _is_real_hospital(None, "yes")
     assert not _is_real_hospital("Sri Sai Clinic", None)
     assert not _is_real_hospital(float("nan"), None)
+
+def test_hospital_filter_drops_specialty_clinics():
+    assert not _is_real_hospital("Pranam Dental Hospital", None)
+    assert not _is_real_hospital("Nethra Eye Hospital", None)
+    assert not _is_real_hospital("Dr. T.V.Ramesh Piles Hospital", None)
+    assert _is_real_hospital("Orient Hospital", None)
+    assert _is_real_hospital("Manipal Hospital", None)
