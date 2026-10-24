@@ -1,0 +1,126 @@
+{
+ "fire": {
+  "free_flow": {
+   "target_min": 5.0,
+   "zones": 30,
+   "covered": 3,
+   "missed": 27,
+   "avg_pct_nodes_covered": 0.12,
+   "median_eta_min": 9.7,
+   "worst_zones": [
+    [
+     "Grid 0,0",
+     13.7
+    ],
+    [
+     "Grid 1,0",
+     12.6
+    ],
+    [
+     "Grid 2,1",
+     11.6
+    ],
+    [
+     "Grid 4,0",
+     11.6
+    ],
+    [
+     "Grid 0,2",
+     11.5
+    ]
+   ]
+  },
+  "peak": {
+   "target_min": 5.0,
+   "zones": 30,
+   "covered": 0,
+   "missed": 30,
+   "avg_pct_nodes_covered": 0.04,
+   "median_eta_min": 20.4,
+   "worst_zones": [
+    [
+     "Grid 0,0",
+     27.7
+    ],
+    [
+     "Grid 1,0",
+     26.4
+    ],
+    [
+     "Grid 0,2",
+     26.2
+    ],
+    [
+     "Grid 2,1",
+     25.0
+    ],
+    [
+     "Grid 4,0",
+     24.7
+    ]
+   ]
+  }
+ },
+ "ambulance": {
+  "free_flow": {
+   "target_min": 10.0,
+   "zones": 30,
+   "covered": 30,
+   "missed": 0,
+   "avg_pct_nodes_covered": 1.0,
+   "median_eta_min": 1.8,
+   "worst_zones": [
+    [
+     "Grid 4,5",
+     4.8
+    ],
+    [
+     "Grid 3,5",
+     4.7
+    ],
+    [
+     "Grid 2,2",
+     3.9
+    ],
+    [
+     "Grid 4,0",
+     3.6
+    ],
+    [
+     "Grid 2,4",
+     3.4
+    ]
+   ]
+  },
+  "peak": {
+   "target_min": 10.0,
+   "zones": 30,
+   "covered": 30,
+   "missed": 0,
+   "avg_pct_nodes_covered": 0.98,
+   "median_eta_min": 3.9,
+   "worst_zones": [
+    [
+     "Grid 3,5",
+     10.0
+    ],
+    [
+     "Grid 4,5",
+     9.7
+    ],
+    [
+     "Grid 4,0",
+     8.5
+    ],
+    [
+     "Grid 2,2",
+     8.4
+    ],
+    [
+     "Grid 3,4",
+     7.8
+    ]
+   ]
+  }
+ }
+}
